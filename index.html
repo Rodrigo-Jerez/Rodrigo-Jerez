@@ -1,74 +1,171 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Rodrigo Jerez Herrera | Portafolio Profesional</title>
+    <meta charset="UTF-8">
+    <title>Rodrigo Jerez Herrera | Portafolio Profesional</title>
+
+```
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 60px 40px;
+    }
+
+    /* ===== HEADER NOMBRE + FOTO ===== */
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .header-text h1 {
+        margin: 0 0 15px 0;
+        font-size: 42px;
+        color: #f5c400;
+    }
+
+    .header-text p {
+        margin: 0;
+        line-height: 1.6;
+        max-width: 600px;
+    }
+
+    .profile-photo {
+        width: 220px;
+        height: 220px;
+        background-color: #111;
+        border-radius: 12px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+
+    .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* NO CORTA LA IMAGEN */
+        background-color: #111;
+    }
+
+    h2 {
+        color: #f5c400;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    a {
+        color: #f5c400;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .logo {
+        margin: 20px 0;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .contact p {
+        margin: 8px 0;
+    }
+
+    footer {
+        margin-top: 80px;
+        font-size: 14px;
+        color: #aaa;
+    }
+</style>
+```
+
 </head>
+
 <body>
+    <div class="container">
 
-  <h1>Rodrigo Jerez Herrera</h1>
+```
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-text">
+            <h1>Rodrigo Jerez Herrera</h1>
+            <p>
+                Profesional con más de 5 años de experiencia en el sector financiero y empresarial,
+                enfocado en el análisis, la estructuración y la implementación de soluciones de
+                financiamiento que generan resultados reales.
+            </p>
+        </div>
 
-  <p>
-    Profesional con más de 5 años de experiencia en el sector financiero y empresarial,
-    enfocado en el análisis, la estructuración y la implementación de soluciones de
-    financiamiento que generan resultados reales.
-  </p>
+        <div class="profile-photo">
+            <img src="foto.jpeg" alt="Rodrigo Jerez Herrera">
+        </div>
+    </div>
 
-  <!-- 🔧 ÚNICO CAMBIO AQUÍ -->
-  <img 
-    src="foto.jpeg" 
-    alt="Rodrigo Jerez Herrera"
-    style="max-width: 100%; height: auto; object-fit: contain;"
-  />
-  <!-- 🔧 FIN DEL ÚNICO CAMBIO -->
+    <!-- SOBRE MÍ -->
+    <h2>Sobre mí</h2>
+    <p>
+        Cuento con más de cinco años de experiencia dentro del sector financiero,
+        participando en el análisis, estructuración y colocación de soluciones de
+        financiamiento para empresas de distintos tamaños y sectores.
+    </p>
 
-  <h2>Sobre mí</h2>
+    <p>
+        Actualmente colaboro dentro de Fincea, acompañando a empresas en la toma de
+        decisiones financieras y en la búsqueda de soluciones que impulsen su crecimiento
+        de manera sostenible.
+    </p>
 
-  <p>
-    Cuento con más de cinco años de experiencia dentro del sector financiero,
-    participando en el análisis, estructuración y colocación de soluciones de
-    financiamiento para empresas de distintos tamaños y sectores.
-  </p>
+    <!-- LOGO FINCEA -->
+    <div class="logo">
+        <img src="fincea-logo.png" alt="Fincea">
+    </div>
 
-  <p>
-    Actualmente colaboro dentro de Fincea,
-    acompañando a empresas en la toma de decisiones financieras y en la búsqueda
-    de soluciones que impulsen su crecimiento de manera sostenible.
-  </p>
+    <p>
+        Fincea es una financiera enfocada en ofrecer soluciones de financiamiento
+        para empresas y PyMEs, combinando análisis financiero y estrategia.
+    </p>
 
-  <h2>Fincea</h2>
+    <!-- ESPECIALIZACIÓN -->
+    <h2>Áreas de especialización</h2>
+    <ul>
+        <li>Arrendamiento puro</li>
+        <li>Arrendamiento financiero</li>
+        <li>Crédito simple</li>
+        <li>Crédito revolvente</li>
+        <li>Análisis financiero y evaluación de riesgo</li>
+        <li>Estructuración de soluciones de financiamiento</li>
+    </ul>
 
-  <img src="fincea-logo.png" alt="Fincea" />
+    <!-- CONTACTO -->
+    <h2>Contacto</h2>
+    <div class="contact">
+        <p>WhatsApp: <a href="https://wa.me/524448503115">444-850-3115</a></p>
+        <p>LinkedIn: <a href="http://www.linkedin.com/in/rodrigo-jerez-047056204">Rodrigo Jerez</a></p>
+        <p>Correo: <a href="mailto:rjerez@fincea.com">rjerez@fincea.com</a></p>
+    </div>
 
-  <p>
-    Fincea es una financiera enfocada en ofrecer soluciones de financiamiento
-    para empresas y PyMEs, combinando análisis financiero y estrategia.
-  </p>
+    <footer>
+        © 2026 · Rodrigo Jerez Herrera · Portafolio profesional
+    </footer>
 
-  <h2>Áreas de especialización</h2>
-
-  <ul>
-    <li>Arrendamiento puro</li>
-    <li>Arrendamiento financiero</li>
-    <li>Crédito simple</li>
-    <li>Crédito revolvente</li>
-    <li>Análisis financiero y evaluación de riesgo</li>
-    <li>Estructuración de soluciones de financiamiento</li>
-  </ul>
-
-  <h2>Contacto</h2>
-
-  <p>
-    <a href="https://wa.me/524448503115">WhatsApp</a><br />
-    <a href="https://wa.me/524448503115">444-850-3115</a><br />
-    <a href="http://www.linkedin.com/in/rodrigo-jerez-047056204">LinkedIn</a><br />
-    <a href="http://www.linkedin.com/in/rodrigo-jerez-047056204">Rodrigo Jerez</a><br />
-    Correo: <a href="mailto:rjerez@fincea.com">rjerez@fincea.com</a>
-  </p>
-
-  <footer>
-    © 2026 · Rodrigo Jerez Herrera · Portafolio profesional
-  </footer>
+</div>
+```
 
 </body>
 </html>
